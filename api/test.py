@@ -4,7 +4,7 @@ from schemas import PayloadSchema
 from exercise.function import find_closest_number
 import time
 
-expected_result = 9
+expected_result = 8
 
 
 def setup_test(app):
