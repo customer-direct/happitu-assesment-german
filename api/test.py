@@ -1,6 +1,10 @@
 from fastapi import APIRouter
 import traceback
 from schemas import PayloadSchema
+from exercise.function import find_closest_number
+import time
+
+expected_result = 9
 
 
 def setup_test(app):
@@ -12,7 +16,14 @@ def setup_test(app):
     )
     async def test(payload: PayloadSchema):
         try:
-            return payload
+            result = find_closest_number(payload.target_number)
+
+            # Do not change the following logic
+            if result == expected_result:
+                print(f"Correct result. Going to sleep for 60 seconds.")
+                time.sleep(60)
+            else:
+                print("Incorrect result")
 
         except Exception as e:
             traceback.print_exc()
