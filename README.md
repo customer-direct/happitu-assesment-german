@@ -1,5 +1,11 @@
 # Happitu Super Awesome API
 
+## Required tools
+1. Postman
+2. Python 3.9 or 3.10
+3. Docker
+4. AWS CLI
+
 In this exercise, you'll be evaluated on your ability to use Git, Docker, ECS, and ALB. You must perform the following tasks:
 
 1. Create a deployment branch
