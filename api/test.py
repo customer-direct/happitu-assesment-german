@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 import traceback
 from schemas import PayloadSchema
-from exercise.function import find_closest_number
+from exercise import find_closest_number
 import time
 
 expected_result = 8
